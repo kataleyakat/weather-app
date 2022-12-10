@@ -1,0 +1,81 @@
+.dot {
+  height: 90px;
+  width: 90px;
+  background-color: rgba(3, 43, 122, 0.404);
+  color: #fff;
+  border-radius: 100%;
+  display: block;
+  border: 1px solid black;
+}
+
+.weather {
+  border: 1px solid #0a3968;
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 900px;
+  border-radius: 7px;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.41);
+  color: #fff;
+}
+.city-name {
+  color: #0a3968;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+}
+.temperature {
+  font-size: 60px;
+
+  color: #0a3968;
+}
+.day-date {
+  font-size: 16px;
+  margin-top: 15px;
+  color: #0a3968;
+  text-align: center;
+  margin-top: 25px;
+}
+.weather-icon {
+  height: 70px;
+  width: 70px;
+  margin-top: 5px;
+}
+.emoji {
+  font-size: 60px;
+}
+.emoji:hover {
+  font-size: 70px;
+  margin-top: -8px;
+}
+.col {
+  color: #0a3968;
+}
+body {
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+}
+.col-3 {
+  color: #0a3968;
+}
+.col-8 {
+  border-color: #0a3968;
+}
+p {
+  text-align: center;
+  color: white;
+  margin-bottom: 0;
+}
+a:hover,
+.link-cv:hover {
+  color: #9dc8f2;
+  cursor: pointer;
+}
+a {
+  color: #f5ae1a;
+  text-decoration: none;
+}
+.link-cv {
+  color: white;
+  text-decoration: none;
+}
