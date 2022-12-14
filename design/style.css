@@ -23,15 +23,17 @@
   font-size: 60px;
   font-weight: bold;
   text-align: center;
+  margin-left: -50px;
 }
 .temperature {
   font-size: 60px;
 
   color: #0a3968;
+  margin-left: 20px;
 }
 .day-date {
   font-size: 16px;
-  margin-top: 15px;
+
   color: #0a3968;
   text-align: center;
   margin-top: 25px;
