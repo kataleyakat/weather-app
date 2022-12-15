@@ -22,93 +22,101 @@
   </head>
   <body style="background-image: url('design/cloud.jpg')">
     <div class="weather">
-      <form class="search-form" id="search-form">
+      <div class="weather-app-wrapper">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-8">
+              <input
+                type="text"
+                placeholder="Type your city"
+                autofocus="on"
+                id="city-input"
+                class="form-control shadow-sm"
+              />
+            </div>
+            <div class="col-2">
+              <input
+                type="submit"
+                value="Search 🔍"
+                autofocus="on"
+                class="form-control btn btn-primary shadow-sm"
+              />
+            </div>
+            <div class="col-2">
+              <input
+                type="button"
+                value="Current 📍"
+                id="current-button"
+                class="form-control btn btn-primary shadow-sm"
+              />
+            </div>
+          </div>
+        </form>
+
+        <br />
+        <br />
+
         <div class="row">
-          <div class="col-8">
-            <input
-              type="text"
-              placeholder="Type your city"
-              autofocus="on"
-              id="city-input"
-              class="form-control shadow-sm"
-            />
+          <div class="col-2">
+            <div class="clearfix">
+              <img
+                src="design/sun.jpg"
+                id="icon"
+                class="weather-icon float-left"
+              />
+              <div class="description" id="description">Clear Sky</div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="city-name" id="city-name">Kyiv</div>
+          </div>
+
+          <div class="col-2">
+            <span class="temperature" id="temperature">19</span>
           </div>
           <div class="col-2">
-            <input
-              type="submit"
-              value="Search 🔍"
-              autofocus="on"
-              class="form-control btn btn-primary shadow-sm"
-            />
+            <span class="units" id="units">
+              <a href="#" id="celsius-link">°C</a> |
+              <a href="#" id="fahrenheit-link">°F</a>
+            </span>
           </div>
-          <div class="col-2">
-            <input
-              type="button"
-              value="Current 📍"
-              id="current-button"
-              class="form-control btn btn-primary shadow-sm"
-            />
+
+          <div class="col-3">
+            <div class="day-date">
+              Saturday, 12:40 <br />21 of November, 2022
+            </div>
           </div>
         </div>
-      </form>
 
-      <br />
-      <br />
+        <br />
+        <br />
 
-      <div class="row">
-        <div class="col-2">
-          <div class="clearfix">
-            <img
-              src="design/sun.jpg"
-              id="icon"
-              class="weather-icon float-left"
-            />
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="city-name" id="city-name">Kyiv</div>
-        </div>
-
-        <div class="col-3">
-          <span class="temperature" id="temperature">19</span
-          ><span class="units">
-            <a href="#" id="celsius-link">°C</a> |
-            <a href="#" id="fahrenheit-link">°F</a>
-          </span>
-        </div>
-        <div class="col-3">
-          <div class="day-date">Saturday, 12:40 <br />21 of November, 2022</div>
-        </div>
-      </div>
-
-      <br />
-      <br />
-
-      <div class="container text-center">
-        <div class="row">
-          <div class="col order-1">
-            <span class="dot"><div class="emoji">☀️</div></span> <br />
-            Sunday <br />+12°
-          </div>
-          <div class="col order-1">
-            <span class="dot"><div class="emoji">☀️</div></span> <br />Monday
-            <br />+12°
-          </div>
-          <div class="col order-1">
-            <span class="dot"> <div class="emoji">🌦</div> </span><br />Tuesday
-            <br />+10°
-          </div>
-          <div class="col order-1">
-            <span class="dot"><div class="emoji">🌤</div></span><br />Wednesday
-            <br />+10°
-          </div>
-          <div class="col order-1">
-            <span class="dot"><div class="emoji">☀️</div></span><br />Thursday
-            <br />+9°
-          </div>
-          <div class="col order-1">
-            <span class="dot"><div class="emoji">🌥</div></span><br />Friday
-            <br />+9°
+        <div class="container text-center">
+          <div class="row">
+            <div class="col order-1">
+              <span class="dot"><div class="emoji">☀️</div></span> <br />
+              Sunday <br />+12°
+            </div>
+            <div class="col order-1">
+              <span class="dot"><div class="emoji">☀️</div></span> <br />Monday
+              <br />+12°
+            </div>
+            <div class="col order-1">
+              <span class="dot"> <div class="emoji">🌦</div> </span><br />Tuesday
+              <br />+10°
+            </div>
+            <div class="col order-1">
+              <span class="dot"><div class="emoji">🌤</div></span><br />Wednesday
+              <br />+10°
+            </div>
+            <div class="col order-1">
+              <span class="dot"><div class="emoji">☀️</div></span><br />Thursday
+              <br />+9°
+            </div>
+            <div class="col order-1">
+              <span class="dot"><div class="emoji">🌥</div></span><br />Friday
+              <br />+9°
+            </div>
           </div>
         </div>
       </div>
@@ -123,6 +131,7 @@
       </a>
       🌼
     </p>
+
     <script src="app.js"></script>
   </body>
 </html>

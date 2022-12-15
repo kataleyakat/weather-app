@@ -23,25 +23,28 @@
   font-size: 60px;
   font-weight: bold;
   text-align: center;
-  margin-left: -50px;
 }
 .temperature {
   font-size: 60px;
-
+  text-align: right;
   color: #0a3968;
-  margin-left: 20px;
+  margin-left: 120px;
 }
 .day-date {
   font-size: 16px;
-
   color: #0a3968;
   text-align: center;
   margin-top: 25px;
 }
+.units {
+  text-align: right;
+  margin-left: 50px;
+  position: relative;
+  bottom: -50px;
+}
 .weather-icon {
   height: 100px;
   width: 100px;
-  margin-top: 5px;
 }
 .emoji {
   font-size: 60px;
@@ -56,10 +59,9 @@
 body {
   background-size: cover;
   font-family: "Montserrat", sans-serif;
+  overflow-wrap: normal;
 }
-.col-3 {
-  color: #0a3968;
-}
+
 .col-8 {
   border-color: #0a3968;
 }
@@ -80,4 +82,11 @@ a {
 .link-cv {
   color: white;
   text-decoration: none;
+}
+.description {
+  text-transform: capitalize;
+  color: #0a3968;
+  text-align: center;
+
+  margin-top: 10px;
 }
