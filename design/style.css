@@ -45,6 +45,7 @@
 .weather-icon {
   height: 100px;
   width: 100px;
+  margin-left: 10px;
 }
 .emoji {
   font-size: 60px;
@@ -87,6 +88,4 @@ a {
   text-transform: capitalize;
   color: #0a3968;
   text-align: center;
-
-  margin-top: 10px;
 }

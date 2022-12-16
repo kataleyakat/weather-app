@@ -40,9 +40,8 @@ function searchCity(city) {
 }
 
 function showWeather(response) {
-  let temperature = Math.round(celsiusTemperature);
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = `${temperature}`;
+  temperatureElement.innerHTML = Math.round(response.data.main.temp);
   document.querySelector("#city-name").innerHTML = response.data.name;
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
