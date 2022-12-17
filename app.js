@@ -2,7 +2,13 @@ let now = new Date();
 let currentDate = document.querySelector(".day-date");
 let date = now.getDate();
 let hours = now.getHours();
+if (hours < 10) {
+  hours = `0${hours}`;
+}
 let minutes = now.getMinutes();
+if (minutes < 10) {
+  minutes = `0${minutes}`;
+}
 let year = now.getFullYear();
 let days = [
   "Sunday",
@@ -43,11 +49,7 @@ function showWeather(response) {
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   document.querySelector("#city-name").innerHTML = response.data.name;
-  let iconElement = document.querySelector("#icon");
-  iconElement.setAttribute(
-    "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-  );
+
   celsiusTemperature = response.data.main.temp;
   let descriptionElement = document.querySelector("#description");
   descriptionElement.innerHTML = response.data.weather[0].description;

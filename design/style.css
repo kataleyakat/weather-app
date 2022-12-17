@@ -16,7 +16,7 @@
 }
 .temperature {
   font-size: 60px;
-  text-align: right;
+
   color: #0a3968;
   margin-left: 120px;
 }
@@ -88,4 +88,7 @@ a {
   margin-left: auto;
   margin-top: -10px;
   margin-bottom: 10px;
+}
+.image:hover {
+  background-color: rgba(255, 255, 255, 0.41);
 }
