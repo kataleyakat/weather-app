@@ -70,7 +70,6 @@ function displayForecast(response) {
   </div>
 
   <div class="date-forecast">${formatDay(forecastDay.dt)}</div>
-  
   <div class="weather-forecast-temperatures">
     <span class="temperature-max">${Math.round(forecastDay.temp.max)}°</span>
     <span class="temperature-min">${Math.round(forecastDay.temp.min)}°</span>
@@ -106,6 +105,12 @@ function showWeather(response) {
   let descriptionElement = document.querySelector("#description");
   descriptionElement.innerHTML = response.data.weather[0].description;
   getForecast(response.data.coord);
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function handleSubmit(event) {
