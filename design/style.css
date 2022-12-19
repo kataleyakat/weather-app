@@ -53,16 +53,20 @@ body {
 p {
   text-align: center;
   color: white;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
-a:hover,
-.link-cv:hover {
-  color: #9dc8f2;
+a:hover {
+  color: #0a3968;
   cursor: pointer;
 }
 a {
   color: #f5ae1a;
   text-decoration: none;
+}
+.link-cv:hover {
+  cursor: pointer;
+  background-color: #0a3968;
+  color: #fff;
 }
 .link-cv {
   color: white;
@@ -86,7 +90,6 @@ a {
   display: block;
   margin-right: auto;
   margin-left: auto;
-}
-.image:hover {
-  background-color: rgba(255, 255, 255, 0.41);
+  background-color: rgba(10, 57, 104, 0.3);
+  margin-bottom: 30px;
 }
