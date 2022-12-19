@@ -38,6 +38,38 @@ let month = months[now.getMonth()];
 
 currentDate.innerHTML = `${day}, ${hours}:${minutes}, <br /> ${date} of ${month}, ${year}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col">
+  <div class="image" id="image">
+    <img src="http://openweathermap.org/img/wn/50d@2x.png" alt="image" />
+  </div>
+
+  <div class="date-forecast">${day}</div>
+  <div class="weather-forecast-temperatures">
+    <span class="temperature-max">10°</span>
+    <span class="temperature-min">3°</span>
+  </div>
+</div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function searchCity(city) {
   let apiKey = "f5029b784306910c19746e40c14d6cd3";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -97,3 +129,5 @@ fahrenheitLink.addEventListener("click", showFahrenheit);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", showCelsius);
+
+displayForecast();
