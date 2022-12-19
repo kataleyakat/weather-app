@@ -93,3 +93,7 @@ a {
   background-color: rgba(10, 57, 104, 0.3);
   margin-bottom: 30px;
 }
+.image:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
