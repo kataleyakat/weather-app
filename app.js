@@ -151,4 +151,5 @@ fahrenheitLink.addEventListener("click", showFahrenheit);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", showCelsius);
 
-displayForecast();
+searchCity("Kyiv");
++displayForecast();
