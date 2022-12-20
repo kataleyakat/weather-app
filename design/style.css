@@ -43,8 +43,9 @@
 }
 body {
   background-size: cover;
+  background-image: url("https://cdn.pixabay.com/photo/2018/08/23/07/35/thunderstorm-3625405_1280.jpg");
+
   font-family: "Montserrat", sans-serif;
-  overflow-wrap: normal;
 }
 
 .col-8 {
@@ -56,11 +57,11 @@ p {
   margin-bottom: 20px;
 }
 a:hover {
-  color: #0a3968;
+  color: #fff;
   cursor: pointer;
 }
 a {
-  color: #f5ae1a;
+  color: #0a3968;
   text-decoration: none;
 }
 .link-cv:hover {
